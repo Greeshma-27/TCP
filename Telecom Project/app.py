@@ -1,4 +1,4 @@
-from werkzeug.urls import url_quote
+from werkzeug.urls import quote
 from flask import Flask, render_template, request
 app = Flask(__name__)
 import pickle

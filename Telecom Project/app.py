@@ -1,5 +1,5 @@
-from werkzeug.urls import quote
 from flask import Flask, render_template, request
+from urllib.parse import quote as url_quote 
 app = Flask(__name__)
 import pickle
 model = pickle.load(open('churnnew.pkl','rb'))
